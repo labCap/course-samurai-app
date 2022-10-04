@@ -1,46 +1,51 @@
 @font-face {
-	font-family: "icomoon";
-	src: url("fonts/icomoon.eot?msl23a");
-	src: url("fonts/icomoon.eot?msl23a#iefix") format("embedded-opentype"),
-		url("fonts/icomoon.ttf?msl23a") format("truetype"),
-		url("fonts/icomoon.woff?msl23a") format("woff"),
-		url("fonts/icomoon.svg?msl23a#icomoon") format("svg");
-	font-weight: normal;
-	font-style: normal;
-	font-display: block;
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?k9pp6i');
+  src:  url('fonts/icomoon.eot?k9pp6i#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?k9pp6i') format('truetype'),
+    url('fonts/icomoon.woff?k9pp6i') format('woff'),
+    url('fonts/icomoon.svg?k9pp6i#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
-[class^="ico-"],
-[class*=" ico-"] {
-	/* use !important to prevent issues with browser extensions that change fonts */
-	font-family: "icomoon" !important;
-	speak: never;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
+[class^="ico-"], [class*=" ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+.ico-bookmark:before {
+  content: "\e906";
+}
+.ico-heart:before {
+  content: "\e907";
+}
 .ico-newspaper:before {
-	content: "\e900";
+  content: "\e900";
 }
 .ico-gear:before {
-	content: "\e902";
+  content: "\e902";
 }
 .ico-comment:before {
-	content: "\e903";
+  content: "\e903";
 }
 .ico-music:before {
-	content: "\e904";
+  content: "\e904";
 }
 .ico-user:before {
-	content: "\e905";
+  content: "\e905";
 }
 .ico-logo:before {
-	content: "\e901";
+  content: "\e901";
 }
