@@ -34,19 +34,23 @@ code {
 	display: flex;
 	flex-direction: column;
 
-	height: 100%;
+	min-height: 100%;
 	overflow-x: hidden;
 
 	> main {
-		flex: 1 1 auto;
-		display: flex;
-		gap: 10px;
-		// height: 100%;
+		flex: 1 1 100%;
 	}
+}
+
+.main__inner {
+	display: flex;
+	gap: 10px;
+	// height: 100%;
 }
 
 .container {
 	max-width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 }
 

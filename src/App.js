@@ -20,16 +20,20 @@ function App() {
 		<div className="wrapper">
 			<Header openMenu={openMenu} openingMenu={openingMenu} />
 
-			<main className="main container">
-				<NavBar openMenu={openMenu} />
+			<main className="main">
+				{/* <div className="container"> */}
+				<div className="main__inner container">
+					<NavBar openMenu={openMenu} />
 
-				<section className="content">
-					<Banner />
+					<section className="content">
+						<Banner />
 
-					<User />
+						<User />
 
-					<Posts />
-				</section>
+						<Posts />
+					</section>
+				</div>
+				{/* </div> */}
 			</main>
 		</div>
 	);

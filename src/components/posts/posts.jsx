@@ -8,7 +8,7 @@ export const Posts = () => {
 	return (
 		<div className="posts">
 			<h2 className="posts__title title">Posts</h2>
-			<Post />
+			<Post mess={"hi"} />
 		</div>
 	);
 };
