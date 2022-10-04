@@ -1,7 +1,42 @@
 .post {
 	padding: 0 10px;
-	margin-bottom: 20px;
-	display: flex;
+	margin-bottom: calc(30px + (20 - 30) * ((100vw - 320px) / (1200 - 320)));
+
+	&__body {
+		display: flex;
+		border-bottom: 1px solid lighten($color: #333, $amount: 10);
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+
+	&__footer {
+		display: flex;
+		gap: 20px;
+
+		font-size: calc(20px + (17 - 20) * ((100vw - 320px) / (1200 - 320)));
+
+		[class*="ico"] {
+			margin-right: 10px;
+		}
+	}
+
+	&__like {
+		&.active {
+			[class*="ico"],
+			.post__num {
+				color: tomato;
+			}
+		}
+	}
+
+	&__save {
+		&.active {
+			[class*="ico"],
+			.post__num {
+				color: lightseagreen;
+			}
+		}
+	}
 
 	&__img {
 		width: 50px;

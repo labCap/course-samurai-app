@@ -9,10 +9,10 @@ export const AddPost = () => {
 				name="mess"
 				id="add-post__mess"
 				className="add-post__mess form__textarea"
-				placeholder="Введіть повідомлення"
+				placeholder="Enter the message"
 			></textarea>
 			<button type="submit" className="add-post__btn form__btn">
-				Додати
+				Add
 			</button>
 		</form>
 	);
