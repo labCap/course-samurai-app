@@ -1,0 +1,77 @@
+.add-post {
+	margin-bottom: 30px;
+
+	&__mess {
+		margin-right: 10px;
+	}
+
+	&__btn {
+	}
+}
+
+.form {
+	display: flex;
+	align-items: start;
+	width: 100%;
+	padding: 0 10px;
+
+	@media (max-width: 425px) {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	&__textarea {
+		flex: 10;
+		width: 100%;
+		padding: 10px;
+		height: 100px;
+		resize: vertical;
+		background-color: #535353;
+		color: #fff;
+		font-size: 16px;
+		line-height: 130%;
+		border: 2px solid transparent;
+		transition: all 0.3s ease-in-out;
+
+		&::placeholder {
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 16px;
+			line-height: 100%;
+		}
+
+		&:focus {
+			border-color: #dfd300;
+		}
+	}
+
+	&__btn {
+		flex: 2;
+		width: 100%;
+		padding: 15px 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #535353;
+		font-size: 16px;
+		line-height: 100%;
+		color: #fff;
+
+		transition: all 0.3s ease-in-out;
+
+		@media (min-width: 768px) {
+			&:hover {
+				background-color: lighten($color: #dfd300, $amount: 20%);
+				color: #535353;
+			}
+		}
+
+		&:focus {
+			background-color: lighten($color: #dfd300, $amount: 20%);
+			color: #535353;
+		}
+
+		&:active {
+			background-color: darken($color: #dfd300, $amount: 20%);
+		}
+	}
+}

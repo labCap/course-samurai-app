@@ -1,12 +1,13 @@
 import React from "react";
 
+import "./App.scss";
+
+import { AddPost } from "./components/add-post/add-post";
 import { Banner } from "./components/banner/banner";
 import { Header } from "./components/header/header";
 import { NavBar } from "./components/navbar/navbar";
 import { Posts } from "./components/posts/posts";
 import { User } from "./components/user/user";
-
-import "./App.scss";
 
 function App() {
 	const [openMenu, setOpenMenu] = React.useState(false);
@@ -21,16 +22,17 @@ function App() {
 			<Header openMenu={openMenu} openingMenu={openingMenu} />
 
 			<main className="main container">
-				{/* <div className=""> */}
 				<NavBar openMenu={openMenu} />
+
 				<section className="content">
 					<Banner />
 
 					<User />
 
+					<AddPost />
+
 					<Posts />
 				</section>
-				{/* </div> */}
 			</main>
 		</div>
 	);
