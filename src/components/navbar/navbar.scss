@@ -43,6 +43,12 @@
 				transform: translateX(10px);
 			}
 		}
+		&.active {
+			a {
+				color: lighten($color: #dfd300, $amount: 20%);
+			}
+			// transform: translateX(10px);
+		}
 
 		&:active {
 			a {

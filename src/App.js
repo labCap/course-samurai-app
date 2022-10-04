@@ -2,7 +2,6 @@ import React from "react";
 
 import "./App.scss";
 
-import { AddPost } from "./components/add-post/add-post";
 import { Banner } from "./components/banner/banner";
 import { Header } from "./components/header/header";
 import { NavBar } from "./components/navbar/navbar";
@@ -28,8 +27,6 @@ function App() {
 					<Banner />
 
 					<User />
-
-					<AddPost />
 
 					<Posts />
 				</section>

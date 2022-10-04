@@ -8,7 +8,7 @@ export const NavBar = ({ openMenu }) => {
 	return (
 		<nav className={openMenu ? "nav menu-open" : "nav"}>
 			<ul className="nav__list">
-				<li className="nav__list-item">
+				<li className="nav__list-item active">
 					<a href="#">Profile</a>
 				</li>
 				<li className="nav__list-item">
