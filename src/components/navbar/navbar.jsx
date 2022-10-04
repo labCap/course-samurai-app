@@ -1,10 +1,12 @@
 import React from "react";
 
+// import "../../util/da.js";
+
 import "./navbar.scss";
 
-export const NavBar = () => {
+export const NavBar = ({ openMenu }) => {
 	return (
-		<nav className="nav">
+		<nav className={openMenu ? "nav menu-open" : "nav"}>
 			<ul className="nav__list">
 				<li className="nav__list-item">
 					<a href="#">Profile</a>

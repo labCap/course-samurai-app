@@ -1,8 +1,25 @@
-
 .nav {
 	flex: 2;
 	background-color: #333;
 	padding: 20px 10px;
+
+	@media (max-width: 768px) {
+		position: absolute;
+		top: 0;
+		left: 100%;
+		z-index: 100;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		transition: all 0.3s ease-in-out;
+
+		&.menu-open {
+			left: 0;
+		}
+	}
 
 	&__list {
 		display: flex;
@@ -13,13 +30,18 @@
 		font-size: 18px;
 		margin-bottom: 15px;
 		color: #000;
+		@media (max-width: 768px) {
+			font-size: 23px;
+		}
 
 		transition: all 0.3s ease-in-out;
-		&:hover {
-			a {
-				color: lighten($color: #dfd300, $amount: 20%);
+		@media (min-width: 768px) {
+			&:hover {
+				a {
+					color: lighten($color: #dfd300, $amount: 20%);
+				}
+				transform: translateX(10px);
 			}
-			transform: translateX(10px);
 		}
 
 		&:active {
