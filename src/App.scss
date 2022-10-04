@@ -1,4 +1,8 @@
 .content {
 	flex: 10;
 	background-color: #3a3a3a;
+
+	@media (max-width: 768px) {
+		padding-bottom: 100px;
+	}
 }
