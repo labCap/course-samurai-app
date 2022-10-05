@@ -17,8 +17,8 @@ function App() {
 				{/* <div className="main__inner container"> */}
 				<NavBar />
 				<section className="content">
-					{/* <Profile /> */}
-					<Message />
+					<Profile />
+					{/* <Message /> */}
 				</section>
 				{/* </div> */}
 				{/* </div> */}
