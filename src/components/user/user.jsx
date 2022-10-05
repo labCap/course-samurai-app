@@ -39,10 +39,18 @@ export const User = () => {
 
 					<div className="user-info__body">
 						<ul className="user__list">
-							<li>DoB</li>
-							<li>Location</li>
-							<li>education</li>
-							<li>web-site</li>
+							<li>birthday: 01/01/2000</li>
+							<li>Location: Mars</li>
+							{/* <li>education</li> */}
+							<li>
+								web-site:{" "}
+								<a
+									className="link"
+									href="https://course-samurai-app-kzcb.vercel.app/"
+								>
+									site
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
