@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // import "../../util/da.js";
 
@@ -13,23 +14,23 @@ export const NavBar = () => {
 						<img src="img/user.png" alt="profile img" />
 					</div>
 					{/* <span className="ico-user"></span> */}
-					<a href="#">Profile</a>
+					<Link to={"/"}>Profile</Link>
 				</li>
 				<li className="nav__list-item">
 					<span className="ico-comment"></span>
-					<a href="#">Messages</a>
+					<Link to={"/messages"}>Messages</Link>
 				</li>
 				<li className="nav__list-item">
 					<span className="ico-newspaper"></span>
-					<a href="#">News</a>
+					<Link to={"/news"}>News</Link>
 				</li>
 				<li className="nav__list-item">
 					<span className="ico-music"></span>
-					<a href="#">Music</a>
+					<Link to={"/music"}>Music</Link>
 				</li>
 				<li className="nav__list-item">
 					<span className="ico-gear"></span>
-					<a href="#">Settings</a>
+					<Link to={"/settings"}>Settings</Link>
 				</li>
 			</ul>
 		</nav>

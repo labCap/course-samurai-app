@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./App.scss";
 
@@ -9,21 +10,22 @@ import { Profile } from "./pages/profile/profile";
 
 function App() {
 	return (
-		<div className="wrapper">
-			<Header />
+		<Router>
+			<div className="wrapper">
+				<Header />
 
-			<main className="main container">
-				{/* <div className=""> */}
-				{/* <div className="main__inner container"> */}
-				<NavBar />
-				<section className="content">
-					<Profile />
-					{/* <Message /> */}
-				</section>
-				{/* </div> */}
-				{/* </div> */}
-			</main>
-		</div>
+				<main className="main container">
+					<NavBar />
+
+					<section className="content">
+						<Routes>
+							<Route path="/" element={<Profile />} />
+							<Route path="/messages" element={<Message />} />
+						</Routes>
+					</section>
+				</main>
+			</div>
+		</Router>
 	);
 }
 

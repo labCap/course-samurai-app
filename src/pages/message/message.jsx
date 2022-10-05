@@ -25,7 +25,9 @@ export const Message = () => {
 						<div className="message-chat__text">hi</div>
 					</div>
 					<div className="message-chat__user message-chat__user-you">
-						<div className="message-chat__img"></div>
+						<div className="message-chat__img">
+							<img src="img/user.png" alt="" />
+						</div>
 						<div className="message-chat__text">hi</div>
 					</div>
 				</div>
