@@ -1,0 +1,188 @@
+.message {
+	height: 100%;
+	display: flex;
+	position: relative;
+	&__list {
+		padding: 10px;
+		flex: 3;
+	}
+
+	&__chat {
+		flex: 9;
+	}
+}
+
+.message-list {
+	background-color: #3a3a3a;
+	transition: all 0.3s ease-in-out;
+
+	@media (max-width: 768px) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateX(0);
+		z-index: 100;
+		width: 100vw;
+		height: 100%;
+
+		&.close {
+			transform: translateX(-120%);
+		}
+	}
+
+	&__item {
+		background-color: #3a3a3a;
+		padding: 10px 0;
+		height: 60px;
+		position: relative;
+		padding-left: 50px;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid lighten($color: #333, $amount: 10);
+		}
+	}
+
+	&__img {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: lightseagreen;
+	}
+
+	&__name {
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	&__num-mark {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: tomato;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.message-chat {
+	background-color: #333;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	&__header {
+		padding: 10px;
+		background-color: #3a3a3a;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__name {
+		font-size: 20px;
+	}
+
+	&__settings {
+		font-size: 20px;
+		color: #fff;
+		background-color: transparent;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		transition: all 0.3s ease-in-out;
+
+		@media (min-width: 768px) {
+			&:hover {
+				background-color: lighten($color: #535353, $amount: 20);
+			}
+		}
+		&:active {
+			background-color: darken($color: #535353, $amount: 20);
+		}
+	}
+
+	&__body {
+		padding: 10px;
+		flex: 1 1 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	&__user {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		// &:not(:last-child) {
+		margin-bottom: 10px;
+		// }
+	}
+
+	&__user-you {
+		flex-direction: row-reverse;
+	}
+
+	&__img {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: lightseagreen;
+	}
+
+	&__text {
+		max-width: 500px;
+		word-break: break-all;
+		border-radius: 5px;
+		padding: 10px;
+		background-color: rgb(77, 77, 77);
+	}
+
+	&__footer {
+		padding: 10px;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		.message-chat__btn {
+			width: 50px;
+			height: 100%;
+			transform: rotate(90deg);
+		}
+	}
+
+	&__input {
+		width: 100%;
+		// height: 150px;
+	}
+
+	&__btn {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: #535353;
+		color: #fff;
+
+		transition: all 0.3s ease-in-out;
+
+		@media (min-width: 768px) {
+			&:hover {
+				background-color: lighten($color: #535353, $amount: 20);
+			}
+		}
+		&:active {
+			background-color: darken($color: #535353, $amount: 20);
+		}
+	}
+}

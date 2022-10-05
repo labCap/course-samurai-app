@@ -27,6 +27,10 @@ code {
 #root {
 	width: 100%;
 	height: 100%;
+	padding-bottom: 50px;
+	@media (max-width: 768px) {
+		padding-bottom: 85px;
+	}
 }
 
 .wrapper {
@@ -39,13 +43,9 @@ code {
 
 	> main {
 		flex: 1 1 100%;
+		display: flex;
+		gap: 10px;
 	}
-}
-
-.main__inner {
-	display: flex;
-	gap: 10px;
-	// height: 100%;
 }
 
 .container {
@@ -63,4 +63,24 @@ code {
 .link {
 	text-decoration: underline;
 	color: lightseagreen;
+}
+
+.input {
+	padding: 10px;
+	background-color: #535353;
+	color: #fff;
+	font-size: 16px;
+	line-height: 130%;
+	border: 2px solid transparent;
+	transition: all 0.3s ease-in-out;
+
+	&::placeholder {
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 16px;
+		line-height: 100%;
+	}
+
+	&:focus {
+		border-color: #dfd300;
+	}
 }
