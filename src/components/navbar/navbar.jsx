@@ -9,29 +9,29 @@ export const NavBar = () => {
 	return (
 		<nav className="nav">
 			<ul className="nav__list">
-				<li className="nav__list-item active">
+				<Link to={"/"} className="nav__list-item active">
 					<div className="profile-ico">
 						<img src="img/user.png" alt="profile img" />
 					</div>
 					{/* <span className="ico-user"></span> */}
-					<Link to={"/"}>Profile</Link>
-				</li>
-				<li className="nav__list-item">
+					<span className="nav__list-text">Profile</span>
+				</Link>
+				<Link to={"/messages"} className="nav__list-item">
 					<span className="ico-comment"></span>
-					<Link to={"/messages"}>Messages</Link>
-				</li>
-				<li className="nav__list-item">
+					<span className="nav__list-text">Messages</span>
+				</Link>
+				<Link to={"/news"} className="nav__list-item">
 					<span className="ico-newspaper"></span>
-					<Link to={"/news"}>News</Link>
-				</li>
-				<li className="nav__list-item">
+					<span className="nav__list-text">News</span>
+				</Link>
+				<Link to={"/music"} className="nav__list-item">
 					<span className="ico-music"></span>
-					<Link to={"/music"}>Music</Link>
-				</li>
-				<li className="nav__list-item">
+					<span className="nav__list-text">Music</span>
+				</Link>
+				<Link to={"/settings"} className="nav__list-item">
 					<span className="ico-gear"></span>
-					<Link to={"/settings"}>Settings</Link>
-				</li>
+					<span className="nav__list-text">Settings</span>
+				</Link>
 			</ul>
 		</nav>
 	);
