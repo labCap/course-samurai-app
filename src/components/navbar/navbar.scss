@@ -69,6 +69,10 @@
 			[class*="ico"] {
 				color: lighten($color: #dfd300, $amount: 20%);
 			}
+
+			.profile-ico {
+				border-color: #dfd300;
+			}
 			// transform: translateX(10px);
 		}
 
@@ -91,7 +95,7 @@
 		height: 43px;
 		border-radius: 50%;
 		overflow: hidden;
-		border: 2px solid #dfd300;
+		border: 2px solid #333;
 
 		img {
 			width: 100%;

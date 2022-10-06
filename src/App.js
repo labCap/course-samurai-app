@@ -19,8 +19,17 @@ function App() {
 
 					<section className="content">
 						<Routes>
-							<Route path="/" element={<Profile />} />
-							<Route path="/messages" element={<Message />} />
+							<Route exact path="/" element={<Profile />} />
+							<Route
+								exact
+								path="/profile"
+								element={<Profile />}
+							/>
+							<Route
+								exact
+								path="/messages"
+								element={<Message />}
+							/>
 						</Routes>
 					</section>
 				</main>
